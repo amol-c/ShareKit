@@ -68,13 +68,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7A0FB85117A4462300B88C87 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7A0406C01740F1FD003404B9 /* ShareKit.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 7AB5342D1552AADD00171BCE;
-			remoteInfo = "Static Library";
-		};
 		7A11916018D7450A004353B7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7A0406C01740F1FD003404B9 /* ShareKit.xcodeproj */;
@@ -361,13 +354,6 @@
 			proxyType = 2;
 			remoteGlobalIDString = 7AECF32C171D51C3000722FA;
 			remoteInfo = "YouTube SDK";
-		};
-		7AA2E93B1743824200B17434 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7A0406C01740F1FD003404B9 /* ShareKit.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 7AB5360E1552E26800171BCE;
-			remoteInfo = "Resource Bundle";
 		};
 		7AD6584518576AAA002D6245 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -755,8 +741,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				7A0FB85217A4462300B88C87 /* PBXTargetDependency */,
-				7AA2E93C1743824200B17434 /* PBXTargetDependency */,
 			);
 			name = "ShareKit demo app";
 			productName = "ShareKit demo app";
@@ -773,7 +757,7 @@
 				ORGANIZATIONNAME = "Vilem Kurz";
 				TargetAttributes = {
 					7A0406621740E3F5003404B9 = {
-						DevelopmentTeam = U4PCPZ765T;
+						DevelopmentTeam = S46ZWTP5EH;
 						SystemCapabilities = {
 							com.apple.InAppPurchase = {
 								enabled = 0;
@@ -1196,19 +1180,6 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		7A0FB85217A4462300B88C87 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Static Library";
-			targetProxy = 7A0FB85117A4462300B88C87 /* PBXContainerItemProxy */;
-		};
-		7AA2E93C1743824200B17434 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Resource Bundle";
-			targetProxy = 7AA2E93B1743824200B17434 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
 		7A04066F1740E3F6003404B9 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
@@ -1299,6 +1270,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch *.xcode* (*) .DS_Store CVS .svn .git .hg *.framework";
 				FRAMEWORK_SEARCH_PATHS = (
 					$inherited,
@@ -1311,6 +1284,7 @@
 				INFOPLIST_FILE = "ShareKit demo app/ShareKit demo app-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				USER_HEADER_SEARCH_PATHS = $inherited;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1320,6 +1294,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch *.xcode* (*) .DS_Store CVS .svn .git .hg *.framework";
 				FRAMEWORK_SEARCH_PATHS = (
 					$inherited,
@@ -1332,6 +1308,7 @@
 				INFOPLIST_FILE = "ShareKit demo app/ShareKit demo app-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				USER_HEADER_SEARCH_PATHS = $inherited;
 				WRAPPER_EXTENSION = app;
 			};

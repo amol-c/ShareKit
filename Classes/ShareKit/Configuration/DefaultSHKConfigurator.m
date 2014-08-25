@@ -486,7 +486,7 @@ One of the troubles with the native share form is that it gives IOS6 props on fa
  These values are used to define the default favorite sharers appearing on ShareKit's action sheet.
  */
 - (NSArray*)defaultFavoriteURLSharers {
-    return [NSArray arrayWithObjects:@"SHKTwitter",@"SHKiOSTwitter", @"SHKFacebook", @"SHKiOSFacebook", @"SHKPocket", nil];
+    return [NSArray arrayWithObjects:@"SHKTwitter",@"SHKiOSTwitter", @"SHKFacebook", @"SHKiOSFacebook", nil];
 }
 - (NSArray*)defaultFavoriteImageSharers {
     return [NSArray arrayWithObjects:@"SHKMail",@"SHKFacebook", @"SHKiOSFacebook", @"SHKCopy", nil];

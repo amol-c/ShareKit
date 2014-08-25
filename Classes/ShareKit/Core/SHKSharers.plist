@@ -2,6 +2,13 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>services</key>
+	<array>
+		<string>SHKiOSFacebook</string>
+		<string>SHKiOSTwitter</string>
+		<string>SHKFacebook</string>
+		<string>SHKTwitter</string>
+	</array>
 	<key>actions</key>
 	<array>
 		<string>SHKPhotoAlbum</string>
@@ -15,7 +22,7 @@
 		<string>SHKLogout</string>
 		<string>SHKReadingList</string>
 	</array>
-	<key>services</key>
+	<key>unused</key>
 	<array>
 		<string>SHKOneNote</string>
 		<string>SHKKippt</string>
